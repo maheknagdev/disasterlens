@@ -10,3 +10,5 @@ data/crisismmd/*
 !data/aider/.gitkeep
 !data/crisismmd/.gitkeep
 .DS_Store
+CLAUDE.md
+AI_Prompts_Log.md
