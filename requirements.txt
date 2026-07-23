@@ -1,0 +1,31 @@
+# DisasterLens — Mahek's components
+# Vision (CLIP fine-tuning)
+torch
+torchvision
+transformers
+timm
+Pillow
+opencv-python
+
+# Text / Fusion (GPT-4o)
+openai
+python-dotenv
+pydantic
+
+# App + Visualization
+streamlit
+folium
+streamlit-folium
+pandas
+numpy
+
+# Dataset handling
+datasets
+
+# Evaluation (metrics, confusion matrices)
+scikit-learn
+matplotlib
+seaborn
+
+# Notebooks
+jupyter

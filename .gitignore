@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+outputs/models/*.pt
+outputs/models/*.pth
+outputs/maps/*.html
+data/aider/*
+data/crisismmd/*
+!data/aider/.gitkeep
+!data/crisismmd/.gitkeep
+.DS_Store
