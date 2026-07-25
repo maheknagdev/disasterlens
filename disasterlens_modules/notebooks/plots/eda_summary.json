@@ -1,0 +1,71 @@
+{
+  "class_distribution": {
+    "aider_severity": {
+      "mild": 485,
+      "moderate": 1047,
+      "none": 4390,
+      "severe": 511
+    },
+    "crisismmd_fine_categories": {
+      "affected_individuals": 465,
+      "infrastructure_and_utility_damage": 937,
+      "injured_or_dead_people": 481,
+      "missing_or_found_people": 40,
+      "not_humanitarian": 4531,
+      "other_relevant_information": 5872,
+      "rescue_volunteering_or_donation_effort": 3257,
+      "vehicle_damage": 54
+    },
+    "crisismmd_resources": {
+      "food": 3257,
+      "medical": 946,
+      "no match": 10497,
+      "shelter": 937,
+      "water": 3257
+    }
+  },
+  "conflict_distribution": {
+    "by_source": {
+      "real": 400,
+      "synthetic": 100
+    },
+    "by_type": {
+      "location_mismatch": 100,
+      "none": 100,
+      "resource_mismatch": 150,
+      "severity_mismatch": 150
+    },
+    "rows": 500
+  },
+  "image_sizes": {
+    "height_range": [
+      152,
+      3456
+    ],
+    "readable_images": 6433,
+    "unreadable_images": 0,
+    "width_range": [
+      123,
+      5184
+    ]
+  },
+  "sample_counts": {
+    "aider": {
+      "test": 647,
+      "train": 5144,
+      "val": 642
+    },
+    "crisismmd": {
+      "test": 1570,
+      "train": 12506,
+      "val": 1561
+    }
+  },
+  "tweet_lengths": {
+    "count": 15637,
+    "maximum_words": 26,
+    "mean_words": 13.72,
+    "median_words": 14,
+    "minimum_words": 3
+  }
+}

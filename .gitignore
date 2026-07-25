@@ -12,3 +12,6 @@ data/crisismmd/*
 .DS_Store
 CLAUDE.md
 AI_Prompts_Log.md
+report_draft.md
+evaluation/urgency_sanity_subset.csv
+.cache/

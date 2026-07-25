@@ -7,8 +7,8 @@ timm
 Pillow
 opencv-python
 
-# Text / Fusion (GPT-4o)
-openai
+# Text / Fusion (Gemini)
+google-genai
 python-dotenv
 pydantic
 
@@ -16,6 +16,7 @@ pydantic
 streamlit
 folium
 streamlit-folium
+geopy
 pandas
 numpy
 
