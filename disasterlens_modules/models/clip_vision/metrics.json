@@ -1,0 +1,78 @@
+{
+  "test_accuracy": 0.98145285935085,
+  "best_validation_accuracy": 0.9828660436137072,
+  "classification_report": {
+    "none": {
+      "precision": 0.9930875576036866,
+      "recall": 0.9817767653758542,
+      "f1-score": 0.9873997709049256,
+      "support": 439.0
+    },
+    "mild": {
+      "precision": 0.9215686274509803,
+      "recall": 0.9591836734693877,
+      "f1-score": 0.94,
+      "support": 49.0
+    },
+    "moderate": {
+      "precision": 0.9814814814814815,
+      "recall": 0.9906542056074766,
+      "f1-score": 0.986046511627907,
+      "support": 107.0
+    },
+    "severe": {
+      "precision": 0.9444444444444444,
+      "recall": 0.9807692307692307,
+      "f1-score": 0.9622641509433962,
+      "support": 52.0
+    },
+    "accuracy": 0.98145285935085,
+    "macro avg": {
+      "precision": 0.9601455277451483,
+      "recall": 0.9780959688054873,
+      "f1-score": 0.9689276083690572,
+      "support": 647.0
+    },
+    "weighted avg": {
+      "precision": 0.9818422413643679,
+      "recall": 0.98145285935085,
+      "f1-score": 0.981566015487643,
+      "support": 647.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      431,
+      4,
+      2,
+      2
+    ],
+    [
+      1,
+      47,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      106,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      51
+    ]
+  ],
+  "labels": [
+    "none",
+    "mild",
+    "moderate",
+    "severe"
+  ],
+  "model_id": "openai/clip-vit-base-patch32",
+  "epochs": 15,
+  "seed": 42
+}

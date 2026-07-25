@@ -1,0 +1,158 @@
+{
+  "base_model": "FacebookAI/roberta-base",
+  "fine_categories": [
+    "affected_individuals",
+    "infrastructure_and_utility_damage",
+    "injured_or_dead_people",
+    "missing_or_found_people",
+    "not_humanitarian",
+    "other_relevant_information",
+    "rescue_volunteering_or_donation_effort",
+    "vehicle_damage"
+  ],
+  "contract_resources": [
+    "food",
+    "water",
+    "shelter",
+    "medical"
+  ],
+  "fine_to_resources": {
+    "affected_individuals": [
+      "medical"
+    ],
+    "infrastructure_and_utility_damage": [
+      "shelter"
+    ],
+    "injured_or_dead_people": [
+      "medical"
+    ],
+    "missing_or_found_people": [],
+    "not_humanitarian": [],
+    "other_relevant_information": [],
+    "rescue_volunteering_or_donation_effort": [
+      "food",
+      "water"
+    ],
+    "vehicle_damage": []
+  },
+  "threshold": 0.5,
+  "max_length": 128,
+  "epochs": 3,
+  "seed": 42,
+  "best_validation_macro_f1": 0.2754720784424008,
+  "test_fine_macro_f1": 0.2746169774133422,
+  "test_contract_macro_f1": 0.40197344087857056,
+  "fine_classification_report": {
+    "affected_individuals": {
+      "precision": 0.16666666666666666,
+      "recall": 0.02127659574468085,
+      "f1-score": 0.03773584905660377,
+      "support": 47.0
+    },
+    "infrastructure_and_utility_damage": {
+      "precision": 1.0,
+      "recall": 0.010526315789473684,
+      "f1-score": 0.020833333333333332,
+      "support": 95.0
+    },
+    "injured_or_dead_people": {
+      "precision": 0.3888888888888889,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.4628099173553719,
+      "support": 49.0
+    },
+    "missing_or_found_people": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 4.0
+    },
+    "not_humanitarian": {
+      "precision": 0.5989010989010989,
+      "recall": 0.4801762114537445,
+      "f1-score": 0.5330073349633252,
+      "support": 454.0
+    },
+    "other_relevant_information": {
+      "precision": 0.5309597523219814,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.5559157212317666,
+      "support": 588.0
+    },
+    "rescue_volunteering_or_donation_effort": {
+      "precision": 0.49272349272349275,
+      "recall": 0.7247706422018348,
+      "f1-score": 0.5866336633663366,
+      "support": 327.0
+    },
+    "vehicle_damage": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 6.0
+    },
+    "accuracy": 0.5273885350318471,
+    "macro avg": {
+      "precision": 0.3972674874377661,
+      "recall": 0.2989389587439548,
+      "f1-score": 0.2746169774133422,
+      "support": 1570.0
+    },
+    "weighted avg": {
+      "precision": 0.5523024867999331,
+      "recall": 0.5273885350318471,
+      "f1-score": 0.5013524965612488,
+      "support": 1570.0
+    }
+  },
+  "contract_classification_report": {
+    "food": {
+      "precision": 0.49272349272349275,
+      "recall": 0.7247706422018348,
+      "f1-score": 0.5866336633663366,
+      "support": 327.0
+    },
+    "water": {
+      "precision": 0.49272349272349275,
+      "recall": 0.7247706422018348,
+      "f1-score": 0.5866336633663366,
+      "support": 327.0
+    },
+    "shelter": {
+      "precision": 1.0,
+      "recall": 0.010526315789473684,
+      "f1-score": 0.020833333333333332,
+      "support": 95.0
+    },
+    "medical": {
+      "precision": 0.46153846153846156,
+      "recall": 0.375,
+      "f1-score": 0.41379310344827586,
+      "support": 96.0
+    },
+    "micro avg": {
+      "precision": 0.4908741594620557,
+      "recall": 0.6047337278106509,
+      "f1-score": 0.5418875927889714,
+      "support": 845.0
+    },
+    "macro avg": {
+      "precision": 0.6117463617463618,
+      "recall": 0.45876690004828585,
+      "f1-score": 0.40197344087857056,
+      "support": 845.0
+    },
+    "weighted avg": {
+      "precision": 0.5462116645548598,
+      "recall": 0.6047337278106509,
+      "f1-score": 0.5033866514074382,
+      "support": 845.0
+    },
+    "samples avg": {
+      "precision": 0.17452229299363056,
+      "recall": 0.17452229299363056,
+      "f1-score": 0.17452229299363056,
+      "support": 845.0
+    }
+  }
+}

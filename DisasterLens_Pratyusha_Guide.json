@@ -1,0 +1,2075 @@
+{
+  "metadata": {
+    "title": "DisasterLens_Pratyusha_Guide",
+    "source_file": "DisasterLens_Pratyusha_Guide.docx",
+    "source_sha256": "4346638f58798e60ab2b4911ce888e9370842873655bcf3b2fdf3f92dcf9e594",
+    "generated_utc": "2026-07-23T15:38:40.133585+00:00",
+    "paragraph_count": 259,
+    "table_count": 1
+  },
+  "sections": [
+    {
+      "title": "1. Project Overview",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 6,
+      "paragraph_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "2. System Architecture & Your Role",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 21,
+      "paragraph_indices": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "3. The JSON Contract (Critical — Read First)",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 33,
+      "paragraph_indices": [
+        33,
+        34
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "3.1 Vision Module Output",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 35,
+      "paragraph_indices": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "3.2 NLP Module Output",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 42,
+      "paragraph_indices": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "4. Dataset Preparation & EDA",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 51,
+      "paragraph_indices": [
+        51
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "4.1 AIDER Dataset",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 52,
+      "paragraph_indices": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "4.2 CrisisMMD Dataset",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 64,
+      "paragraph_indices": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "4.3 What to deliver from this section",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 74,
+      "paragraph_indices": [
+        74,
+        75,
+        76,
+        77
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "5. Vision Module — Build Guide",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 78,
+      "paragraph_indices": [
+        78
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "5.1 Goal",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 79,
+      "paragraph_indices": [
+        79,
+        80
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "5.2 Recommended Approach — CLIP Fine-tuning",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 81,
+      "paragraph_indices": [
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "5.3 Alternative: Zero-shot CLIP (if time is tight)",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 128,
+      "paragraph_indices": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "5.4 Evaluation — what to report",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 135,
+      "paragraph_indices": [
+        135,
+        136,
+        137,
+        138,
+        139
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "6. NLP Module — Build Guide",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 140,
+      "paragraph_indices": [
+        140
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "6.1 Goal",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 141,
+      "paragraph_indices": [
+        141,
+        142
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "6.2 Recommended Approach — RoBERTa Classification",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 143,
+      "paragraph_indices": [
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "6.3 Entity extraction — deterministic local rules",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 177,
+      "paragraph_indices": [
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "6.4 Combine into final output function",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 196,
+      "paragraph_indices": [
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "6.5 Evaluation — what to report",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 207,
+      "paragraph_indices": [
+        207,
+        208,
+        209,
+        210
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "7. Handoff Checklist",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 211,
+      "paragraph_indices": [
+        211,
+        212
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "7.1 File structure",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 213,
+      "paragraph_indices": [
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "7.2 Integration test",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 222,
+      "paragraph_indices": [
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "8. Suggested Timeline",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 233,
+      "paragraph_indices": [
+        233
+      ],
+      "table_indices": [
+        0
+      ]
+    },
+    {
+      "title": "9. Your Report Sections",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 235,
+      "paragraph_indices": [
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "10. Useful Resources",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 244,
+      "paragraph_indices": [
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257
+      ],
+      "table_indices": []
+    },
+    {
+      "title": "Questions? Reach out to Mahek anytime. Let's build something great!",
+      "heading_style": "inferred-numbered-heading",
+      "start_element": 259,
+      "paragraph_indices": [
+        258
+      ],
+      "table_indices": []
+    }
+  ],
+  "document_order": [
+    {
+      "type": "paragraph",
+      "paragraph_index": 0,
+      "style": null,
+      "text": "DisasterLens"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 1,
+      "style": null,
+      "text": "Multimodal Disaster Relief Resource Mapping System"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 2,
+      "style": null,
+      "text": "Technical Build Guide — Pratyusha's Modules"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 3,
+      "style": null,
+      "text": "Prepared by: Mahek Nagdev"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 4,
+      "style": null,
+      "text": "Course: CS Machine Learning Final Project  |  Northeastern University"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 5,
+      "style": null,
+      "text": "July 2026"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 6,
+      "style": null,
+      "text": "1. Project Overview"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 7,
+      "style": null,
+      "text": "DisasterLens is a multimodal AI system that takes disaster zone photos and news text snippets as input and produces a structured relief assessment: damage severity, estimated resource needs, and an interactive priority map for first responders."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 8,
+      "style": null,
+      "text": "The project is divided into four modules across two team members:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 9,
+      "style": "ListParagraph",
+      "text": "Dataset Preparation & EDA (Pratyusha)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 10,
+      "style": "ListParagraph",
+      "text": "Download, clean, and explore AIDER and CrisisMMD datasets"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 11,
+      "style": "ListParagraph",
+      "text": "Remap labels, analyze class distributions, prepare train/val/test splits"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 12,
+      "style": "ListParagraph",
+      "text": "Vision Module (Pratyusha)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 13,
+      "style": "ListParagraph",
+      "text": "Classify damage severity from images using CLIP fine-tuning"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 14,
+      "style": "ListParagraph",
+      "text": "Output structured JSON per image"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 15,
+      "style": "ListParagraph",
+      "text": "NLP Module (Pratyusha)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 16,
+      "style": "ListParagraph",
+      "text": "Extract resource types via RoBERTa classification on text snippets"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 17,
+      "style": "ListParagraph",
+      "text": "Output structured JSON per text input"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 18,
+      "style": "ListParagraph",
+      "text": "Fusion + Map + App (Mahek)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 19,
+      "style": "ListParagraph",
+      "text": "Combine both JSONs, generate resource priority summary, render interactive map"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 20,
+      "style": null,
+      "text": "Your three modules form the data backbone of the entire system. The quality of the final output depends directly on how well the Vision and NLP modules perform — this is where the core ML work lives."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 21,
+      "style": null,
+      "text": "2. System Architecture & Your Role"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 22,
+      "style": null,
+      "text": "Here is the full data flow end-to-end:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 23,
+      "style": null,
+      "text": "User uploads (photo + text snippet)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 24,
+      "style": null,
+      "text": "|"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 25,
+      "style": null,
+      "text": "|-----> [Vision Module]  ->  { severity, confidence }        <- YOUR WORK"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 26,
+      "style": null,
+      "text": "|"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 27,
+      "style": null,
+      "text": "|-----> [NLP Module]    ->  { resources, location, population } <- YOUR WORK"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 28,
+      "style": null,
+      "text": "|"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 29,
+      "style": null,
+      "text": "└-----> [Fusion Layer]  ->  local entity extraction -> resource vector + summary"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 30,
+      "style": null,
+      "text": "|"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 31,
+      "style": null,
+      "text": "[Folium Map Output]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 32,
+      "style": null,
+      "text": "You own everything that feeds into the Fusion Layer. Your outputs are what determine the accuracy and usefulness of the final system — the fusion layer is only as good as what you pass into it."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 33,
+      "style": null,
+      "text": "3. The JSON Contract (Critical — Read First)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 34,
+      "style": null,
+      "text": "This is the most important section. Both your modules must output exactly this JSON structure. Do not add extra fields or rename keys — the fusion layer depends on these exact field names to function correctly."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 35,
+      "style": null,
+      "text": "3.1 Vision Module Output"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 36,
+      "style": null,
+      "text": "{"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 37,
+      "style": null,
+      "text": "\"severity\": \"severe\",        // one of: none | mild | moderate | severe"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 38,
+      "style": null,
+      "text": "\"confidence\": 0.91,           // float 0.0 to 1.0"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 39,
+      "style": null,
+      "text": "\"damage_types\": [\"flooding\", \"structural_collapse\"],  // list, can be empty"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 40,
+      "style": null,
+      "text": "\"model_used\": \"CLIP-finetune\" // string, for logging"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 41,
+      "style": null,
+      "text": "}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 42,
+      "style": null,
+      "text": "3.2 NLP Module Output"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 43,
+      "style": null,
+      "text": "{"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 44,
+      "style": null,
+      "text": "\"resources_mentioned\": [\"food\", \"shelter\"],  // from: food | water | shelter | medical"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 45,
+      "style": null,
+      "text": "\"location\": \"Kathmandu, Nepal\",                // string, null if not found"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 46,
+      "style": null,
+      "text": "\"population_estimate\": 5000,                    // integer, null if not found"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 47,
+      "style": null,
+      "text": "\"event_type\": \"earthquake\",                   // string, null if not found"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 48,
+      "style": null,
+      "text": "\"urgency_keywords\": [\"critical\", \"trapped\"] // extracted high-signal words"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 49,
+      "style": null,
+      "text": "}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 50,
+      "style": null,
+      "text": "NOTE: If a field cannot be extracted, return null — never omit the key. The downstream code checks for key existence, not value."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 51,
+      "style": null,
+      "text": "4. Dataset Preparation & EDA"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 52,
+      "style": null,
+      "text": "4.1 AIDER Dataset"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 53,
+      "style": "ListParagraph",
+      "text": "Full name: Aerial Image Dataset for Emergency Response"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 54,
+      "style": "ListParagraph",
+      "text": "Download: https://github.com/ckyrkou/AIDER"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 55,
+      "style": "ListParagraph",
+      "text": "Size: ~4,000 images across 5 categories: fire, flood, collapsed building, traffic accident, normal"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 56,
+      "style": "ListParagraph",
+      "text": "Label remapping to our 4 severity levels:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 57,
+      "style": "ListParagraph",
+      "text": "normal -> severity: none"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 58,
+      "style": "ListParagraph",
+      "text": "traffic accident (minor) -> severity: mild"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 59,
+      "style": "ListParagraph",
+      "text": "fire / flood (partial) -> severity: moderate"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 60,
+      "style": "ListParagraph",
+      "text": "collapsed building / severe flood -> severity: severe"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 61,
+      "style": "ListParagraph",
+      "text": "Split into 80% train / 10% val / 10% test — stratified by class"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 62,
+      "style": "ListParagraph",
+      "text": "EDA to include: class distribution bar chart, sample images per class, image size distribution"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 63,
+      "style": null,
+      "text": "NOTE: The 5 AIDER categories don't map 1:1 to our 4 levels. Use the mapping above and adjust if you see heavy class imbalance after remapping."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 64,
+      "style": null,
+      "text": "4.2 CrisisMMD Dataset"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 65,
+      "style": "ListParagraph",
+      "text": "Full name: CrisisMMD: Multimodal Twitter Datasets During Natural Disasters"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 66,
+      "style": "ListParagraph",
+      "text": "Download: https://crisismmD.github.io or search 'CrisisMMD dataset download'"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 67,
+      "style": "ListParagraph",
+      "text": "Size: ~18,000 tweets + images from 7 disasters (Harvey, Irma, Maria, Iraq earthquake, Mexico earthquake, Sri Lanka floods, California wildfires)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 68,
+      "style": "ListParagraph",
+      "text": "Labels available: informativeness, humanitarian category (infrastructure damage, rescue ops, affected individuals, etc.)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 69,
+      "style": "ListParagraph",
+      "text": "Map humanitarian categories to our resource types:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 70,
+      "style": "ListParagraph",
+      "text": "infrastructure damage -> shelter"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 71,
+      "style": "ListParagraph",
+      "text": "affected individuals / medical -> medical"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 72,
+      "style": "ListParagraph",
+      "text": "rescue operations -> food, water"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 73,
+      "style": "ListParagraph",
+      "text": "EDA to include: disaster type distribution, label balance, tweet length histogram, sample texts per category"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 74,
+      "style": null,
+      "text": "4.3 What to deliver from this section"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 75,
+      "style": "ListParagraph",
+      "text": "Cleaned datasets saved as CSV / folder structure ready for model training"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 76,
+      "style": "ListParagraph",
+      "text": "EDA notebook with plots (you will screenshot these for the report)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 77,
+      "style": "ListParagraph",
+      "text": "Train/val/test split files for both datasets"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 78,
+      "style": null,
+      "text": "5. Vision Module — Build Guide"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 79,
+      "style": null,
+      "text": "5.1 Goal"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 80,
+      "style": null,
+      "text": "Take a single image of a disaster zone and classify it into one of four damage severity levels: none, mild, moderate, severe. Output the JSON from Section 3.1."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 81,
+      "style": null,
+      "text": "5.2 Recommended Approach — CLIP Fine-tuning"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 82,
+      "style": null,
+      "text": "Use OpenAI's CLIP model (ViT-B/32) as your base. It is pretrained on image-text pairs so it already understands visual concepts like 'flooded street' or 'collapsed building'. You only need to fine-tune the classification head on top."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 83,
+      "style": null,
+      "text": "Step 1: Install dependencies"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 84,
+      "style": null,
+      "text": "pip install torch torchvision transformers scikit-learn pillow matplotlib seaborn"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 85,
+      "style": null,
+      "text": "Step 2: Load CLIP and set up the classifier"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 86,
+      "style": null,
+      "text": "from transformers import CLIPProcessor, CLIPModel"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 87,
+      "style": null,
+      "text": "import torch, torch.nn as nn"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 88,
+      "style": null,
+      "text": "model = CLIPModel.from_pretrained('openai/clip-vit-base-patch32')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 89,
+      "style": null,
+      "text": "processor = CLIPProcessor.from_pretrained('openai/clip-vit-base-patch32')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 90,
+      "style": null,
+      "text": "# Freeze CLIP backbone, only train the classification head"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 91,
+      "style": null,
+      "text": "for param in model.parameters():"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 92,
+      "style": null,
+      "text": "param.requires_grad = False"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 93,
+      "style": null,
+      "text": "classifier = nn.Sequential("
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 94,
+      "style": null,
+      "text": "nn.Linear(512, 128),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 95,
+      "style": null,
+      "text": "nn.ReLU(),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 96,
+      "style": null,
+      "text": "nn.Dropout(0.3),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 97,
+      "style": null,
+      "text": "nn.Linear(128, 4)   # 4 severity classes"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 98,
+      "style": null,
+      "text": ")"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 99,
+      "style": null,
+      "text": "Step 3: Data loading and transforms"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 100,
+      "style": null,
+      "text": "from torchvision import transforms"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 101,
+      "style": null,
+      "text": "transform = transforms.Compose(["
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 102,
+      "style": null,
+      "text": "transforms.Resize((224, 224)),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 103,
+      "style": null,
+      "text": "transforms.ToTensor(),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 104,
+      "style": null,
+      "text": "transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 105,
+      "style": null,
+      "text": "])"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 106,
+      "style": null,
+      "text": "# Load your AIDER remapped dataset using ImageFolder or custom Dataset class"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 107,
+      "style": null,
+      "text": "Step 4: Training"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 108,
+      "style": null,
+      "text": "# Optimizer: Adam, lr=1e-3"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 109,
+      "style": null,
+      "text": "# Loss: CrossEntropyLoss"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 110,
+      "style": null,
+      "text": "# Train for 10-15 epochs"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 111,
+      "style": null,
+      "text": "# Save best checkpoint based on validation accuracy"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 112,
+      "style": null,
+      "text": "# Expected accuracy: ~78-85% on test set"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 113,
+      "style": null,
+      "text": "Step 5: Prediction function (must match JSON contract)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 114,
+      "style": null,
+      "text": "def predict_severity(image_path):"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 115,
+      "style": null,
+      "text": "img = load_and_transform(image_path)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 116,
+      "style": null,
+      "text": "with torch.no_grad():"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 117,
+      "style": null,
+      "text": "features = model.get_image_features(img)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 118,
+      "style": null,
+      "text": "logits = classifier(features)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 119,
+      "style": null,
+      "text": "probs = torch.softmax(logits, dim=-1)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 120,
+      "style": null,
+      "text": "pred_idx = torch.argmax(probs).item()"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 121,
+      "style": null,
+      "text": "label_map = {0: 'none', 1: 'mild', 2: 'moderate', 3: 'severe'}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 122,
+      "style": null,
+      "text": "return {"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 123,
+      "style": null,
+      "text": "'severity': label_map[pred_idx],"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 124,
+      "style": null,
+      "text": "'confidence': float(probs[0][pred_idx]),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 125,
+      "style": null,
+      "text": "'damage_types': [],"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 126,
+      "style": null,
+      "text": "'model_used': 'CLIP-finetune'"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 127,
+      "style": null,
+      "text": "}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 128,
+      "style": null,
+      "text": "5.3 Alternative: Zero-shot CLIP (if time is tight)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 129,
+      "style": null,
+      "text": "If fine-tuning takes too long, CLIP supports zero-shot classification using text prompts — no training needed:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 130,
+      "style": null,
+      "text": "labels = ['no damage', 'mild damage', 'moderate damage', 'severe damage']"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 131,
+      "style": null,
+      "text": "text_inputs = [f'a disaster photo showing {l}' for l in labels]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 132,
+      "style": null,
+      "text": "# Compute cosine similarity between image embedding and each text label"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 133,
+      "style": null,
+      "text": "# Highest similarity = predicted class"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 134,
+      "style": null,
+      "text": "NOTE: Zero-shot will get ~60-70% accuracy vs ~80-85% for fine-tuned. Fine-tuning is strongly preferred for the report — use zero-shot only as a fallback."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 135,
+      "style": null,
+      "text": "5.4 Evaluation — what to report"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 136,
+      "style": "ListParagraph",
+      "text": "Overall test accuracy"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 137,
+      "style": "ListParagraph",
+      "text": "Per-class precision, recall, F1 — use sklearn.metrics.classification_report"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 138,
+      "style": "ListParagraph",
+      "text": "Confusion matrix — use seaborn heatmap, screenshot for the report"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 139,
+      "style": "ListParagraph",
+      "text": "3-5 example predictions with image + predicted label + confidence"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 140,
+      "style": null,
+      "text": "6. NLP Module — Build Guide"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 141,
+      "style": null,
+      "text": "6.1 Goal"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 142,
+      "style": null,
+      "text": "Take a short news snippet or social media post about a disaster and extract structured information: which resource types are needed, location, population estimate, event type, and urgency keywords. Output the JSON from Section 3.2."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 143,
+      "style": null,
+      "text": "6.2 Recommended Approach — RoBERTa Classification"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 144,
+      "style": null,
+      "text": "Fine-tune RoBERTa for multi-label classification to identify which of the four resource types (food, water, shelter, medical) are relevant in a given text. This is the core ML component of your NLP module."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 145,
+      "style": null,
+      "text": "Step 1: Install dependencies"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 146,
+      "style": null,
+      "text": "pip install transformers torch scikit-learn datasets"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 147,
+      "style": null,
+      "text": "Step 2: Load RoBERTa and set up multi-label classifier"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 148,
+      "style": null,
+      "text": "from transformers import RobertaTokenizer, RobertaForSequenceClassification"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 149,
+      "style": null,
+      "text": "import torch"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 150,
+      "style": null,
+      "text": "tokenizer = RobertaTokenizer.from_pretrained('roberta-base')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 151,
+      "style": null,
+      "text": "model = RobertaForSequenceClassification.from_pretrained("
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 152,
+      "style": null,
+      "text": "'roberta-base',"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 153,
+      "style": null,
+      "text": "num_labels=4,          # food, water, shelter, medical"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 154,
+      "style": null,
+      "text": "problem_type='multi_label_classification'"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 155,
+      "style": null,
+      "text": ")"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 156,
+      "style": null,
+      "text": "Step 3: Prepare CrisisMMD labels"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 157,
+      "style": null,
+      "text": "# Map CrisisMMD humanitarian categories to our 4 resource types"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 158,
+      "style": null,
+      "text": "# infrastructure_and_utility_damage -> [shelter]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 159,
+      "style": null,
+      "text": "# rescue_volunteering_or_donation_effort -> [food, water]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 160,
+      "style": null,
+      "text": "# affected_individuals -> [medical]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 161,
+      "style": null,
+      "text": "# vehicle_damage -> []  (no resource match, label as empty)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 162,
+      "style": null,
+      "text": "# Each sample gets a binary vector: [food, water, shelter, medical]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 163,
+      "style": null,
+      "text": "# e.g. [1, 1, 0, 0] means food and water needed"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 164,
+      "style": null,
+      "text": "Step 4: Training"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 165,
+      "style": null,
+      "text": "# Loss: BCEWithLogitsLoss (standard for multi-label)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 166,
+      "style": null,
+      "text": "# Optimizer: AdamW, lr=2e-5"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 167,
+      "style": null,
+      "text": "# Train for 3-5 epochs"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 168,
+      "style": null,
+      "text": "# Threshold: 0.5 on sigmoid output to get binary predictions"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 169,
+      "style": null,
+      "text": "Step 5: Prediction function (must match JSON contract)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 170,
+      "style": null,
+      "text": "def classify_resources(text):"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 171,
+      "style": null,
+      "text": "inputs = tokenizer(text, return_tensors='pt', truncation=True, max_length=128)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 172,
+      "style": null,
+      "text": "with torch.no_grad():"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 173,
+      "style": null,
+      "text": "logits = model(**inputs).logits"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 174,
+      "style": null,
+      "text": "probs = torch.sigmoid(logits)[0]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 175,
+      "style": null,
+      "text": "resource_map = {0: 'food', 1: 'water', 2: 'shelter', 3: 'medical'}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 176,
+      "style": null,
+      "text": "return [resource_map[i] for i, p in enumerate(probs) if p > 0.5]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 177,
+      "style": null,
+      "text": "6.3 Entity extraction — deterministic local rules"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 178,
+      "style": null,
+      "text": "For location, population estimate, event type, and urgency keywords, use deterministic local extraction rules:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 179,
+      "style": null,
+      "text": "import re"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 180,
+      "style": null,
+      "text": "def extract_entities(text):"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 181,
+      "style": null,
+      "text": "lower = text.lower()"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 182,
+      "style": null,
+      "text": "event_type = next((e for e in ('earthquake', 'flood', 'fire', 'hurricane') if e in lower), None)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 183,
+      "style": null,
+      "text": "population_match = re.search(r'\\b(\\d[\\d,]*)\\s+(?:people|persons|residents|families)\\b', text, re.I)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 184,
+      "style": null,
+      "text": "population = int(population_match.group(1).replace(',', '')) if population_match else None"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 185,
+      "style": null,
+      "text": "location_match = re.search(r'\\b(?:in|near|at)\\s+([A-Z][A-Za-z.-]*)', text)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 186,
+      "style": null,
+      "text": "location = location_match.group(1) if location_match else None"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 187,
+      "style": null,
+      "text": "urgent_terms = ('urgent', 'trapped', 'critical', 'missing', 'emergency', 'displaced')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 188,
+      "style": null,
+      "text": "urgency_keywords = [term for term in urgent_terms if term in lower]"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 189,
+      "style": null,
+      "text": "return {'location': location, 'population_estimate': population,"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 190,
+      "style": null,
+      "text": "        'event_type': event_type, 'urgency_keywords': urgency_keywords}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 191,
+      "style": null,
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 192,
+      "style": null,
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 193,
+      "style": null,
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 194,
+      "style": null,
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 195,
+      "style": null,
+      "text": ""
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 196,
+      "style": null,
+      "text": "6.4 Combine into final output function"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 197,
+      "style": null,
+      "text": "def analyze_text(snippet):"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 198,
+      "style": null,
+      "text": "resources = classify_resources(snippet)   # RoBERTa"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 199,
+      "style": null,
+      "text": "entities  = extract_entities(snippet)     # deterministic local rules"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 200,
+      "style": null,
+      "text": "return {"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 201,
+      "style": null,
+      "text": "'resources_mentioned': resources,"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 202,
+      "style": null,
+      "text": "'location':            entities.get('location'),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 203,
+      "style": null,
+      "text": "'population_estimate': entities.get('population_estimate'),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 204,
+      "style": null,
+      "text": "'event_type':          entities.get('event_type'),"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 205,
+      "style": null,
+      "text": "'urgency_keywords':    entities.get('urgency_keywords', [])"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 206,
+      "style": null,
+      "text": "}"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 207,
+      "style": null,
+      "text": "6.5 Evaluation — what to report"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 208,
+      "style": "ListParagraph",
+      "text": "Resource classification: precision, recall, F1 per resource type"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 209,
+      "style": "ListParagraph",
+      "text": "Entity extraction: manually evaluate 20-30 examples, report % correct per field"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 210,
+      "style": "ListParagraph",
+      "text": "Show 3-5 example input/output pairs — include at least one failure case"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 211,
+      "style": null,
+      "text": "7. Handoff Checklist"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 212,
+      "style": null,
+      "text": "When your modules are ready, here is exactly what to push to the shared GitHub repo:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 213,
+      "style": null,
+      "text": "7.1 File structure"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 214,
+      "style": null,
+      "text": "pratyusha/"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 215,
+      "style": null,
+      "text": "vision_module.py       # contains predict_severity(image_path)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 216,
+      "style": null,
+      "text": "nlp_module.py          # contains analyze_text(snippet)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 217,
+      "style": null,
+      "text": "models/                # saved CLIP + RoBERTa checkpoints"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 218,
+      "style": null,
+      "text": "data/                  # processed CSVs, split files"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 219,
+      "style": null,
+      "text": "notebooks/             # EDA notebook with plots"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 220,
+      "style": null,
+      "text": "requirements.txt       # all pip dependencies"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 221,
+      "style": null,
+      "text": "README.md              # setup + run instructions"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 222,
+      "style": null,
+      "text": "7.2 Integration test"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 223,
+      "style": null,
+      "text": "Before pushing, verify your code passes this test locally:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 224,
+      "style": null,
+      "text": "from pratyusha.vision_module import predict_severity"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 225,
+      "style": null,
+      "text": "from pratyusha.nlp_module import analyze_text"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 226,
+      "style": null,
+      "text": "v = predict_severity('test_images/flood.jpg')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 227,
+      "style": null,
+      "text": "n = analyze_text('Heavy flooding in Dhaka. 10,000 people displaced, need food.')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 228,
+      "style": null,
+      "text": "assert v['severity'] in ['none', 'mild', 'moderate', 'severe']"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 229,
+      "style": null,
+      "text": "assert 0.0 <= v['confidence'] <= 1.0"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 230,
+      "style": null,
+      "text": "assert isinstance(n['resources_mentioned'], list)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 231,
+      "style": null,
+      "text": "assert 'location' in n and 'population_estimate' in n"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 232,
+      "style": null,
+      "text": "print('All checks passed!')"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 233,
+      "style": null,
+      "text": "8. Suggested Timeline"
+    },
+    {
+      "type": "table",
+      "table_index": 0,
+      "rows": [
+        [
+          "Week",
+          "Task",
+          "Goal"
+        ],
+        [
+          "Week 1\n(Now)",
+          "Download AIDER + CrisisMMD\nExplore + remap labels\nSet up Python environment",
+          "Datasets cleaned, splits ready, EDA notebook done"
+        ],
+        [
+          "Week 2",
+          "Train Vision Module\nCLIP fine-tuning on AIDER\nEvaluate on test split",
+          "predict_severity() working, ~75%+ accuracy"
+        ],
+        [
+          "Week 3",
+          "Build NLP Module\nRoBERTa training on CrisisMMD\nlocal entity extraction",
+          "analyze_text() working on 10+ real examples"
+        ],
+        [
+          "Week 4",
+          "Polish + edge cases\nFix null handling\nPush to GitHub",
+          "Integration test passes, handoff complete"
+        ],
+        [
+          "Week 5",
+          "Write report sections\nData, Vision, NLP methods + results\nPlots + screenshots ready",
+          "Report sections drafted and shared"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 234,
+      "style": null,
+      "text": "9. Your Report Sections"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 235,
+      "style": null,
+      "text": "You are responsible for writing the following sections of the final report:"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 236,
+      "style": "ListParagraph",
+      "text": "Dataset / Inputs — describe AIDER and CrisisMMD, label distributions, preprocessing steps, train/val/test split rationale"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 237,
+      "style": "ListParagraph",
+      "text": "Methods: Vision Module — CLIP architecture, fine-tuning approach, label remapping decisions"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 238,
+      "style": "ListParagraph",
+      "text": "Methods: NLP Module — RoBERTa setup, classification approach, and deterministic entity extraction"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 239,
+      "style": "ListParagraph",
+      "text": "Results: Vision — accuracy, confusion matrix, per-class F1 with analysis"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 240,
+      "style": "ListParagraph",
+      "text": "Results: NLP — resource classification metrics, entity extraction examples"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 241,
+      "style": "ListParagraph",
+      "text": "AI Prompts Used — state whether any external prompts were used (required for grading)"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 242,
+      "style": null,
+      "text": "NOTE: Mahek will compile the final document, write Introduction, Discussion, and the app demo section. Share your drafted sections by end of Week 5."
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 243,
+      "style": null,
+      "text": "10. Useful Resources"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 244,
+      "style": null,
+      "text": "Datasets"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 245,
+      "style": "ListParagraph",
+      "text": "AIDER: https://github.com/ckyrkou/AIDER"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 246,
+      "style": "ListParagraph",
+      "text": "CrisisMMD: https://crisismmD.github.io"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 247,
+      "style": "ListParagraph",
+      "text": "Crisis NLP resources: https://crisisnlp.qcri.org"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 248,
+      "style": null,
+      "text": "Models & Libraries"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 249,
+      "style": "ListParagraph",
+      "text": "CLIP (Hugging Face): https://huggingface.co/openai/clip-vit-base-patch32"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 250,
+      "style": "ListParagraph",
+      "text": "RoBERTa (Hugging Face): https://huggingface.co/roberta-base"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 251,
+      "style": "ListParagraph",
+      "text": "Transformers docs: https://huggingface.co/docs/transformers"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 252,
+      "style": "ListParagraph",
+      "text": "scikit-learn metrics: https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 253,
+      "style": null,
+      "text": "Reference Papers"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 254,
+      "style": "ListParagraph",
+      "text": "AIDER: Nia et al., ECCV Workshops 2020"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 255,
+      "style": "ListParagraph",
+      "text": "CrisisMMD: Alam et al., ICWSM 2018"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 256,
+      "style": "ListParagraph",
+      "text": "CLIP: Radford et al., OpenAI 2021"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 257,
+      "style": "ListParagraph",
+      "text": "RoBERTa: Liu et al., arXiv 2019"
+    },
+    {
+      "type": "paragraph",
+      "paragraph_index": 258,
+      "style": null,
+      "text": "Questions? Reach out to Mahek anytime. Let's build something great!"
+    }
+  ]
+}
