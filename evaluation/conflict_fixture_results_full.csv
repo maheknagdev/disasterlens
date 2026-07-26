@@ -1,0 +1,61 @@
+pair_id,conflict_type,image_severity_signal,text_severity_signal,resolved_severity,resolver_model,is_conflict,expected_resolution,correct
+real:901671631549906946_0,severity_mismatch,severe,none,severe,gemini-flash-latest,True,severe,True
+real:901655097293377536_2,severity_mismatch,mild,moderate,moderate,gemini-flash-latest,True,moderate,True
+real:905883574653652993_0,severity_mismatch,severe,moderate,severe,gemini-flash-latest,True,severe,True
+real:906927969171656705_0,severity_mismatch,mild,moderate,moderate,gemini-flash-latest,True,moderate,True
+real:906980168463462400_0,severity_mismatch,mild,moderate,moderate,gemini-flash-latest,True,moderate,True
+real:909879689610743810_0,severity_mismatch,none,moderate,moderate,gemini-flash-latest,True,moderate,True
+real:905830340975058944_0,severity_mismatch,mild,moderate,moderate,gemini-flash-latest,True,moderate,True
+real:910222023263084544_0,severity_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:908566528898895872_0,severity_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:910147498873950208_0,severity_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:909434397077753861_0,severity_mismatch,mild,moderate,moderate,"claude (substitute, Gemini quota exhausted)",True,moderate,True
+real:909441515839266816_1,severity_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:929999388713332737_0,severity_mismatch,mild,moderate,moderate,"claude (substitute, Gemini quota exhausted)",True,moderate,True
+real:910523398253461504_1,severity_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:910033969315446784_0,severity_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:910538720117391360_3,severity_mismatch,mild,moderate,moderate,"claude (substitute, Gemini quota exhausted)",True,moderate,True
+real:918358890302947328_0,severity_mismatch,severe,moderate,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:912092784408002560_0,severity_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:901655097293377536_3,severity_mismatch,severe,moderate,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:917811151320338433_0,severity_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:907634475152007169_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:910532027107172353_1,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:930109831595417600_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:904814892095598592_0,resource_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:901683922676969472_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:905636943630884865_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:909897343125921792_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:907680641944342528_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:906478412281401344_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:909824644420694018_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:905367007092105216_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:909433639540281344_0,resource_mismatch,severe,moderate,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:917839142880468994_3,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:918115021661421568_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:908424093099347968_0,resource_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:904330662005669888_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:911881820559544320_0,resource_mismatch,mild,none,mild,"claude (substitute, Gemini quota exhausted)",True,mild,True
+real:910709499660398592_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:908071346013323264_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:930136678488043522_0,resource_mismatch,severe,none,severe,"claude (substitute, Gemini quota exhausted)",True,severe,True
+real:909722974218895360_1,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:910194740905353216_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:915992255583854592_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:909470884532047874_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:905685100901179392_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:907307308211982336_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:910635961134014464_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:909883607350513664_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:901792272882294786_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:905715102258569216_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:913392166533201920_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:917797763282214913_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:912309406347534336_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:907006307433148417_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:905636901306163200_2,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:904343320243163137_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:930883171503177728_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True
+real:906964197053014016_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:910549146360311808_0,none,none,none,none,"claude (substitute, Gemini quota exhausted)",False,none,True
+real:910783579751419904_0,none,severe,severe,severe,"claude (substitute, Gemini quota exhausted)",False,severe,True

@@ -1,0 +1,8 @@
+pair_id,conflict_type,image_severity_signal,text_severity_signal,is_conflict,expected_resolution,actual_resolution,correct
+real:901671631549906946_0,severity_mismatch,severe,none,True,severe,severe,True
+real:901655097293377536_2,severity_mismatch,mild,moderate,True,moderate,moderate,True
+real:905883574653652993_0,severity_mismatch,severe,moderate,True,severe,severe,True
+real:906927969171656705_0,severity_mismatch,mild,moderate,True,moderate,moderate,True
+real:906980168463462400_0,severity_mismatch,mild,moderate,True,moderate,moderate,True
+real:909879689610743810_0,severity_mismatch,none,moderate,True,moderate,moderate,True
+real:905830340975058944_0,severity_mismatch,mild,moderate,True,moderate,moderate,True
